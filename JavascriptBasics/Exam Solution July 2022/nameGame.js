@@ -1,7 +1,6 @@
 function nameGame(input) {
     let index = 0
-    let comand = input[index]
-    index++
+    let comand = input[index++]
     let title = ''
     let winer = 0
  
@@ -23,25 +22,16 @@ function nameGame(input) {
             }else{
                 sum += 2
             }
-            
-        }
-                
+        }  
          if(sum >= winer){
              title = comand
              winer = sum
          }        
- 
         comand = input[index++]
-        
-       
     }
- 
     console.log(`The winner is ${title} with ${winer} points!`);
- 
- 
- 
- 
 }
+
 
 nameGame(["Ivan",
 "73",
@@ -52,4 +42,19 @@ nameGame(["Ivan",
 "80",
 "65",
 "87",
+"Stop"])
+
+
+nameGame(["Pesho",
+"124",
+"34",
+"111",
+"97",
+"99",
+"Gosho",
+"98",
+"124",
+"88",
+"76",
+"18",
 "Stop"])
